@@ -9,16 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * Created by Ariana on 9/11/2016.
  */
-public class Home extends AppCompatActivity {
+public class Home extends BaseActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
     }
 
-    public static void startThisActivity(Context context){
-        Intent i = new Intent(context,Home.class);
-        context.startActivity(i);
-    }
+
 }
